@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+ 	margin: 0;
+ 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+	overflow: hidden;
+  	background-color: black;
+  	height: 40px;
+  	font-weight: bold;
+}
+
+.topnav {
+	width:70%;
+  	float:left;
+  	border: 1px solid black;
+  	padding-left:100px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  	display: block;
+  	padding: 9px 14px;
+  	text-decoration: none;
+  	width: 16%;
+  	float:left;
+}
+
+.decoa {
+	color: black;
+	font-size: 16px;
+	padding: 10px 14px;
+	width: 15%;
+	float:left;
+}
+
+/* Style the content */
+.content {
+  	background-color: white;
+  	padding: 40px;
+  	/*height: 100%;*/
+  	/*border: 1px solid black;*/
+  	text-align: center;
+   	position:relative;
+   	min-height:100%;
+   	margin-bottom: 100px;
+}
+
+.content .header{
+	border-radius: 3px;
+	background-color: #fff;
+  	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content .back{
+	background-repeat: no-repeat;
+	height: auto;
+	margin-left:10px; 
+	margin-right:10px;
+}
+
+.content .leftback{
+	
+}
+
+.content .rightback{
+	
+}
+
+/* Style the footer */
+.footer {
+  background-color: grey;
+  /*padding: 20px;*/
+  text-align: center;
+  font-size: 8px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  /*border: 1px solid black;*/
+}
+
+.grid-container {
+  display: flex;
+  grid-areas: 
+    'left middle right';
+} 
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  flex:1;
+  height: 380px;
+  width: 33%;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  flex:1;
+  height: 380px;
+  width: 33%;
+}
+
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  flex:1;
+  height: 380px;
+  width: 33%;
+}
+
+/*.ul{
+	list-style: none;
+    padding-left: 0px;
+    width: 75%;
+}*/
+
+.li{
+	display: none;
+	list-style: none;
+	padding-left: 0px;
+	font-size: 28px;
+	width: 50%;
+	font-weight: bold;
+}
+
+.logo {
+	/*width:15%;*/ 
+	padding: 3.5px 3.5px; 
+	float:left;
+	/*border: 1px solid black;*/
+}
+
+.logob {
+	float:left; 
+}
+
+.logoc {
+	float:none;
+	text-align: center; 
+}
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.snip1535 {
+  background-color:  rgb(100, 150, 255);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.snip1535:before,
+.snip1535:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.snip1535:before {
+  border-color:  rgb(100, 150, 255) /*#c47135*/;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -5px;
+  top: -5px;
+}
+.snip1535:after {
+  border-bottom-width: 2px;
+  border-color:  rgb(100, 150, 255);
+  border-left-width: 2px;
+  bottom: -5px;
+  left: -5px;
+}
+.snip1535:hover,
+.snip1535.hover {
+  background-color:  rgb(100, 150, 255);
+}
+.snip1535:hover:before,
+.snip1535.hover:before,
+.snip1535:hover:after,
+.snip1535.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+select{
+	font-size: 14px;
+    padding: 10px;
+    height: 50px;
+    background-size: 13px;
+    border: 4px solid rgb(167, 212, 252);
+    color: rgb(0, 55, 100);
+}
+
+ul.mylist {
+   	padding: 5px 0px 5px 5px;
+    border: 4px solid rgb(167, 212, 252);
+    font-size: 16px;
+    list-style: none;
+    width: 50%;
+    vertical-align: center;
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.type04 {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  margin : auto;
+  width:80%
+}
+table.type04 th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+table.type04 td {
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+table.type05 {
+  border: 4px solid rgb(167, 212, 252);
+  width:30%;
+}
+
+table.type05 td {
+  border: none;
+  padding-up: 10px;
+}
+
+table.type06 {
+  border: none;
+  margin:auto;
+}
+table.type06 td {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a { 
+	text-decoration:none; 
+} 
+
+.snip1535custom {
+  background-color:  rgb(100, 150, 255);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 12px;
+  line-height: 1em;
+  margin: 15px 25px;
+  outline: none;
+  padding: 12px 30px 8px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.f1 {
+  display: block;
+  margin-left: 33%;
+  margin-right: 33%;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 4px solid rgb(167, 212, 252);
+}
+
+input[type="checkbox"]+label {
+	text-align: center;
+	display: table; margin-left: auto; margin-right: auto; display: inline-block;
+	padding: 5px 5px 6px 23px;
+    width: 80%;
+    display: block;
+    background: url('ico-guide-check_off.png') 10px center no-repeat rgb(167, 212, 252);
+    border-radius: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 55, 100);
+    border: 2px solid rgb(167, 212, 252);
+    max-height: 50px;
+}
+
+input[type="checkbox"]:checked+label {
+    background: url('ico-guide-check-on.png') 10px center no-repeat rgb(80, 120, 255);
+    color: white;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type=text] {
+    border : 2px solid skyblue;
+    border-radius : 5px;
+    color : red;
+}
+input[type=text]:hover {
+    background : aliceblue;
+}
+input[type=text]:focus {
+    font-size : 120%;
+}
+
+input[type=password] {
+    border : 2px solid skyblue;
+    border-radius : 5px;
+    color : red;
+}
+input[type=password]:hover {
+    background : aliceblue;
+}
+input[type=password]:focus {
+    font-size : 120%;
+}
